@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5087696984918658718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4493035292421904979}
+  - component: {fileID: 546888951295352072}
+  m_Layer: 0
+  m_Name: UpgradeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4493035292421904979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5087696984918658718}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1568.8528, y: 698.195, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &546888951295352072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5087696984918658718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a07fa801d49e284283ebe0e971f2655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allUpgrades:
+  - id: 1
+    upgradeName: Max Energy
+    icon: {fileID: 21300000, guid: 709397a5ff3e0a5419588e8bb3affeb7, type: 3}
+    description: Increase energy capacity
+    cost: 50
+    prerequisiteId: 0
+  - id: 2
+    upgradeName: Stronger Flashlight
+    icon: {fileID: 21300000, guid: 50435fa92aa74504abdd0e792f8e3c57, type: 3}
+    description: Stronger flashlight, but also drain more energy
+    cost: 150
+    prerequisiteId: 0
+  - id: 3
+    upgradeName: Shotgun
+    icon: {fileID: 21300000, guid: 2ccd1b9325649854cb7bbf4115d35cae, type: 3}
+    description: Unlock the shotgun
+    cost: 200
+    prerequisiteId: 0
